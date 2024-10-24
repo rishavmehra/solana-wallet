@@ -13,6 +13,7 @@ export function SolAirDrop() {
         publicKey,
         LAMPORTS_PER_SOL
       );
+      await connection.confirmTransaction(signature)
     } catch (error: any) {
       console.log(error);
     }
