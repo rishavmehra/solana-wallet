@@ -19,14 +19,17 @@ export function SolAirDrop() {
   }, [connection, publicKey]);
 
   return (
-    <div>
-      <button
-        onClick={onClick}
-        disabled={!publicKey}
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded disabled:opacity-50 disabled:cursor-not-allowed"
-      >
-        Request AirDrop
-      </button>
-    </div>
+    <div className="flex flex-row justify-center">
+            <div className="relative group items-center">
+                <div className="m-1 absolute -inset-0.5 bg-gradient-to-r from-indigo-500 to-fuchsia-500 
+                rounded-lg blur opacity-20 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                <button
+                    className="group w-60 m-2 btn animate-pulse bg-gradient-to-br from-indigo-500 to-fuchsia-500 hover:from-white hover:to-purple-300 text-black"
+                    onClick={onClick} disabled={!publicKey}
+                >
+                 AirDrop 1
+                </button>
+            </div>
+        </div>
   );
 }
