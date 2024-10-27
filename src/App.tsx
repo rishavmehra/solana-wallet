@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import {
   ConnectionProvider,
   useWallet,
@@ -17,6 +17,7 @@ import { SolBalance } from "./componets/SolBalance";
 import { SolAirDrop } from "./componets/SolAirdrop";
 import { SignMessage } from "./componets/SignMsg";
 import { SendSol } from "./componets/SendSol";
+import CreateToken from "./componets/CreateToken";
 
 function App() {
   const network = WalletAdapterNetwork.Devnet;
@@ -84,9 +85,18 @@ function Connect() {
           <h3 className="text-lg font-semibold mb-4">Send SOL</h3>
           <SendSol />
         </div>
+        <div className="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 border border-gray-700 hover:border-gray-600 transition-colors">
+          <h3 className="text-lg font-semibold mb-4">Create Token</h3>
+          <CreateToken/>
+        </div>
       </div>
     </div>
   );
 }
 
 export default App;
+
+
+
+
+//Token mint created at 21YyYiusFLsuD1WcL6TiJNmvyKvcHzjoHFb6LWa7p75K with associated token account at 62ouwW6kskrMvBemXoJJfDBWjbUmLFDsTDzNboXbA7C1
