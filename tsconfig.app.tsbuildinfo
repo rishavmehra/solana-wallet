@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/componets/CreateToken.tsx","./src/componets/SendSol.tsx","./src/componets/SignMsg.tsx","./src/componets/SolAirdrop.tsx","./src/componets/SolBalance.tsx"],"version":"5.6.3"}
